@@ -4,6 +4,7 @@ It's used not to pollute global object (windows object) with many variable, inst
      as soon as it is encountered.
 It does not have any name, becasue it's not a function declaration, it's an functional expression.
 It helps us in reducing unnecessary references to global object, which we will have to remove manually.
+More details on https://developer.mozilla.org/en-US/docs/Glossary/IIFE
 */
 
 //Syntax normal function
