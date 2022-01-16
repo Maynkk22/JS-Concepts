@@ -46,7 +46,7 @@ const anonyFunc = function () {
 anonyFunc();
 
 /* The main difference between function statement and function expression is that function statement contains normal way of 
-    defining the function, i.e. function with name. 
+      defining the function, i.e. function with name. 
     But in case of function expression the function is assigned like a value to a variable
 
     Also the difference is between Hoisting.
@@ -76,9 +76,9 @@ arrowFunc();
 /*
 Differences between an arrow function and normal function are:
     1. Arrow function does not have it's own 'this'. That means it will not be able to access the values in it's immediate
-    scope, but will be able to access the data from it's outer scope.
+      scope, but will be able to access the data from it's outer scope.
     2. Arrow function does not have access to call, bind, apply as they take value from our current execution scope, but arrow
-    function have access to it's outer execution scope.
+      function have access to it's outer execution scope.
     3. It does not have arguments accessing power, like we do in normal function.
     4. Can't be declared sing new keyword as constructors.
 */
@@ -106,10 +106,10 @@ obj.c(); // undefined window{}
 2. Access to call, bind and apply.
 Call, bind and apply, these work on the concept of scope, as they were used to allow methods to execute in different scopes.
 When we use arroe function, it doesn't access current lexical scope, instead it refers outer lexical scope which produce different
-output than expected.
+  output than expected.
 The output is like that because when using normal function, this goes to newObj to access value of num, but in case of arrow
-function, this.num refers to num created in window obj and not the one in newObj because arroe function's this refer to outer
-lexical environment.
+  function, this.num refers to num created in window obj and not the one in newObj because arroe function's this refer to outer
+  lexical environment.
 */
 
 let newObj = {

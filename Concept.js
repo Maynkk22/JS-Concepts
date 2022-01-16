@@ -51,10 +51,10 @@ console.log(findSum(5, 6));
 
 /*
 Impure Functions: They are the functions whose output does not remain constant even if we provide same set of arguments 
-everytime to the functions.
+    everytime to the functions.
 Their value depends on the external data which can modify the output.
 In the given example below, we can see that even if we pass same value eveytime to the function, if the value1 is modified than
-the output will change. So that means the output does not entirely depends on the addNums function, but on value1 variable too.
+    the output will change. So that means the output does not entirely depends on the addNums function, but on value1 variable too.
 */
 
 let value1 = 5;
@@ -70,7 +70,7 @@ addNums(4);
 /*
 Mutable : It refers to the values that can be mutated easily. 
 That means if the same set of data is used by a many functions in programs than if somewhere the data is modified that it's
-modified for everyone.
+    modified for everyone.
 This is the wron approach and we shouldn't use it as it may create ambiguity.
 Consider the following examples: In that we have name declared inside the person1 obj and then we passed it's value to person2
 Now both person1 and person2 have reference to same set of data, so if anywhere the data is modified it's modified for both.
@@ -91,7 +91,7 @@ console.log(person2);
 
 /*
 Immutable: It's a way through which we assign values in such a way that, it's always unique to each one of them, and in case the
-value is changes or modified by one function or variable, than it's only  changes for it not for all of the assignes.
+    value is changes or modified by one function or variable, than it's only  changes for it not for all of the assignes.
 It's a better way of writing code.
 We should always try to use Immutable way of programming as it's better way
 It can be done through several ways. If we consider the example of obj then we have two methods
