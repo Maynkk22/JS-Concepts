@@ -38,3 +38,5 @@ function findLength(a, b, c) {
   console.log(spreadArgs); // output 3
 }
 findLength("abc", "def", "ghi");
+
+console.log(window);
