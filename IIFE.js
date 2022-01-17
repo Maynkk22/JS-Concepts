@@ -55,7 +55,7 @@ console.log(sum);
   var b = 10;
 })();
 
-// console.log(window.b);
+console.log(window.b);
 
 // If we just write IIFE without invoking braces, then we get function body returned. Example
 
